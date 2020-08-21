@@ -1,1 +1,482 @@
-/* styles will be added soon */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body section{
+    background-color: #000000;
+  }
+  
+  button{
+    border: none;
+    cursor: pointer;
+  }
+  
+  .background{
+    background: url('../image/background.jpg') no-repeat center center/cover;
+    background-size: 100% auto;
+    position: relative;
+  }
+  
+  .background::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 50px 60px #000000, inset 0px -64px 30px #000000;
+  }
+  
+  header{
+    display: flex;
+    width: 92%;
+    margin: auto;
+    padding: 5vh 0;
+  }
+  
+  .logo-container{
+    flex: 1;
+    text-align: start;
+  }
+  
+  .logo-container img{
+    width: 22%;
+    margin: 0 0 7px;
+  }
+  
+  .signInButton-container{
+    flex: 1;
+    text-align: end;
+  }
+  
+  .signInButton-container button{
+    padding: 7px 18px;
+    background: #E50914;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+  }
+  
+  .introduction{
+    width: 100%;
+    height: 54vh;
+    position: relative;
+    margin-bottom: 20px;
+    background: transparent;
+  }
+  
+  .introduction, 
+  .logo-container, 
+  .signInButton-container{
+    z-index: 2;
+  }
+  
+  .intro-text{
+    width: 100%;
+    font-size: 90px;
+    font-weight: 800;
+    position: absolute;
+    text-align: center;
+    bottom: -20px;
+  }
+  
+  .intro-text h1{
+    margin-bottom: -20px;
+  }
+  
+  .intro-text1 {
+    color: #ffffff;
+  }
+  
+  .intro-text2{
+    background: linear-gradient(120deg,#FF7900,#FF7900, #F55F2F, #A517C6,#A517C6); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  .intro-text3{
+    background: linear-gradient(to right, #FF7900, #FF7900, #F0504A, #FF7802, #AA19C0, #AA19C0); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  .membership{
+    height: 10vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+  
+  .membership input{
+    background: #ffffff;
+    width: 35%;
+    height: 100%;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+  }
+  
+  .membership button{
+    width: 15%;
+    height: 100%;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: #E30813;
+    font-size: 100%
+  }
+  
+  .membership-text{
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .for-all-text{
+    padding-top: 100px;
+    padding-bottom: 65px;
+  }
+  
+  .some-text{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    
+  }
+  
+  .some-text h1{
+    font-size: 60px;
+    color: #ffffff;
+    letter-spacing: 2px;
+  }
+  
+  .some-text p{
+    font-size: 25px;
+    color: #ffffff;
+    padding-top: 20px;
+  }
+  
+  .shows-panel{
+    width: 70%;
+    margin: auto;
+  }
+  
+  .show-list{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  
+  .one-show{
+    width: 310px;
+    height: 290px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+  }
+  
+  #show1{
+    background: url('../image/show_pic/p1.png');
+    
+  }
+  
+  #show2{
+    background: url('../image/show_pic/p2.png');
+  }
+  
+  #show3{
+    background: url('../image/show_pic/p3.png');
+  }
+  
+  #show4{
+    background: url('../image/show_pic/p4.png');
+  }
+  
+  #show5{
+    background: url('../image/show_pic/p5.png');
+  }
+  
+  #show6{
+    background: url('../image/show_pic/p6.png');
+  }
+  
+  #show7{
+    background: url('../image/show_pic/p7.png');
+  }
+  
+  #show8{
+    background: url('../image/show_pic/p8.png');
+  }
+  
+  #show9{
+    background: url('../image/show_pic/p9.png');
+  }
+  
+  #show10{
+    background: url('../image/show_pic/p10.png') no-repeat;
+    width: 310px;
+    height: 129px;
+  }
+  
+  #show11{
+    background: url('../image/show_pic/p11.png') no-repeat;
+    width: 310px;
+    height: 129px; 
+  }
+  
+  #show12{
+    background: url('../image/show_pic/p12.png') no-repeat;
+    width: 310px;
+    height: 129px;
+  }
+  
+  .more_show{
+    text-align: center;
+    color:#ffffff;
+    font-size: 25px;
+  }
+  
+  .show-name{
+    border-left: 4px solid #E50914;
+    padding: 1px 0px 4px 6px;
+    margin-left: 14px;
+    position: absolute;
+    bottom: 28px;
+    z-index: 2;
+    color: #ffffff;
+  }
+  
+  .show-name h4{
+    font-size: 95%;
+  }
+  
+  .show-name h3{
+    font-size: 160%;
+  }
+  
+  .one-show::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-shadow: inset 0px -120px 140px -50px #000000;
+  }
+  
+  .why-netflix{
+    padding-top: 150px;
+  }
+  
+  .why-netflix h1 {
+    width: 60%;
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+    display: flex;
+    margin: auto;
+  }
+  
+  .why-netflix-ans{
+    margin: 50px  auto;
+  }
+  
+  .why-netflix-ans-head{
+    display: flex;
+    width: 60%;
+    margin: auto;
+  }
+  
+  .why-netflix-ans-head img{
+    width: 40px;
+    line-height: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  
+  .why-netflix-ans-head h3{
+   justify-content: center;
+   font-size: 35px;
+   color: white;
+  }
+  
+  .why-netflix-ans h5 {
+    font-size: 22px;
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 5px 70px 0px 70px;
+    color: white;
+  }
+  
+  .faq_head{
+    text-align: center;
+    font-size: 33px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  
+  .collapsible-menu{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 7px;
+  }
+  
+  .collapsible {
+    background-color: #303030;
+    cursor: pointer;
+    padding: 24px 28px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    display: flex;
+  }
+  
+  .collapsible h3{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    justify-content: center;
+    letter-spacing: 1px;
+    flex: 1;
+  }
+  
+  .expand_icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+    /*transform: rotate(45deg);*/
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 28px 28px;
+    margin: 1px auto;
+    text-align: left;
+    font-size: 25px;
+    display: none;
+    overflow: hidden;
+    color: #fff;
+    background-color: #555;
+    transition: transform 0.3s;
+  }
+  
+  #horizontal_line{
+    border: none;
+    width: 100%;
+    height: 8px;
+    margin: 70px 0px;
+    background: #222222;
+  }
+  
+  footer{
+    width: 66%;
+    margin: 0px auto;
+  }
+  
+  footer p{
+    color: #757575;
+  }
+  
+  footer p a, footer ul li a{
+    text-decoration: none;
+    color: #757575;
+  }
+  
+  footer p a:hover, footer ul li a:hover{
+    text-decoration: underline;
+  }
+  
+  .footer-elements {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto
+  }
+  
+  .footer-element {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex: none;
+    width: 25%;
+    font-size: 13px;
+    margin: 10px 0px;
+  }
+  
+  #globe{
+    width: 25px;
+    position: relative;
+    top: 8px;
+  }
+  
+  #lang-selection {
+    margin-top: 20px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    display: inline-block;
+    padding-left: 15px;
+  }
+  
+  #lang-selection select {
+    background-color: #000;
+    border: none;
+    color: #999;
+    font-size: 14px;
+    width: 130px;
+    height: 48px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  
+  #company{
+    font-size: 13px;
+    margin: 30px 0px 40px 0px;
+  }
+  
+  @media screen and (max-width: 700px) {
+  
+    h1{
+      font-size: 40px;
+    }
+  
+    .membership button{
+      font-size: 80%
+    }
+  }
+  
+  @media screen and (max-width: 560px) {
+    .membership button{
+      font-size: 70%
+    }
+  }
+  
